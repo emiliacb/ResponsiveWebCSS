@@ -1,0 +1,204 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	transition: 300ms;
+	background-color: floralwhite;
+	background-image: url('ada.jpg');
+	background-position: center -120px;
+	background-repeat: no-repeat;
+	height: 230px;
+}
+
+
+nav {
+	width: 100%;
+	height: 65px;
+	background-color: white;
+	display: flex;
+	align-content: center;
+	box-shadow: 0 15px 25px 0 rgb(0,0,0,0.2),
+				0 -15px 25px 0 rgb(0,0,0,0.2)
+}
+
+@media (max-width: 600px) {
+
+	.hmbBoton {
+		position: absolute;
+		margin: 13px 0 0 10px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 7px;
+	}
+
+	.hmbBoton:hover{
+		background-color: salmon;
+	}
+
+	.hmbBoton:hover .line{
+		background-color: white;
+		box-shadow: 0 10px 0 0 white,  0 20px 0 0 white;
+	}
+
+	.hmbBoton:hover .lineOpen{
+		background-color: white;
+	}
+
+
+	.hmbBoton:hover .Cross{
+		background-color: white;
+	}
+
+	.line {
+		transition: 300ms;
+		border-radius: 3px;
+		margin-top: -22px;
+		width: 30px;
+		height: 5px;
+		background-color: salmon;
+		box-shadow: 0 10px 0 0 salmon,  0 20px 0 0 salmon;
+	}
+
+	.lineOpen {
+		transition: 100ms;
+		transform: rotate(45deg);
+		border-radius: 3px;
+		width: 30px;
+		height: 5px;
+		background-color: white;
+
+	}
+
+	.Cross {
+		display: none;
+		transition: 100ms;
+		transform: rotate(90deg);
+		border-radius: 3px;
+		width: 30px;
+		height: 5px;
+		background-color: white;
+	}
+
+	.menuMobile {
+		background-color: salmon;
+		border-radius: 50%;
+		width: 400px;
+		height: 500px;
+		margin: -40px 0 0 -150px;
+		display: none;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		z-index: 0;
+		box-shadow: 10px 10px 10px 0 rgb(0,0,0,0.2),
+					0 0 5px 5px rgb(0,0,0,0.15);
+	}
+
+	.menuMobile ul {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin: 0 -80px -100px 0;
+		}
+
+	.menuMobile li {
+		display: flex;
+		background-color: salmon;
+		background-image: transparent;
+		padding: 10px;
+		border-radius: 5px;
+		margin: 4px;
+	}
+
+
+	.menuMobile li:hover {
+		display: flex;
+		background-color: white;
+		padding: 10px;
+		border-radius: 5px;
+		margin: 4px;
+	}
+
+	.menuMobile li:hover a {
+		text-decoration: none;
+		user-select: none;
+		color: salmon;
+		font-size: 18px;
+	}
+
+	.menuMobile ul a {
+		text-decoration: none;
+		user-select: none;
+		color: white;
+		font-family: 'Mulish', sans-serif;
+	}
+
+	.menuWeb {
+		display: none;
+	}
+
+}
+
+@media (min-width: 600px) {
+
+	header {
+		transition: 500ms;
+		height: 300px;
+	}
+
+	.menuMobile {
+		display: none;
+	}
+
+	.menuMobile ul a {
+		display: none;
+	}
+
+	.menuWeb {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50px;
+		width: 100%;
+		margin-top: 8px;
+	}
+
+	.menuWeb ul {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		}
+
+	.menuWeb li {
+		transition: 500ms;
+		display: flex;
+		background-color: white;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+
+	.menuWeb li:hover {
+		transition: 500ms;
+		background-color: salmon;
+	}
+
+	.menuWeb li:hover a {
+		color: white;
+	}
+
+	.menuWeb ul a {
+		text-decoration: none;
+		user-select: none;
+		color: salmon;
+		font-family: 'Mulish', sans-serif;
+	}
+
+}
