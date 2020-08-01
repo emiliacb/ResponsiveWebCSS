@@ -36,14 +36,6 @@ nav {
 		border-radius: 7px;
 	}
 
-	.hmbBoton:hover{
-		background-color: salmon;
-	}
-
-	.hmbBoton:hover .line{
-		background-color: white;
-		box-shadow: 0 10px 0 0 white,  0 20px 0 0 white;
-	}
 
 	.hmbBoton:hover .lineOpen{
 		background-color: white;
